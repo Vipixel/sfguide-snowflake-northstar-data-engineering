@@ -296,12 +296,12 @@ FROM @tasty_bytes.public.s3load/raw_customer/customer_loyalty/;
 
 -- order_header table load
 COPY INTO tasty_bytes.raw_pos.order_header
-FROM @tasty_bytes.public.s3load/raw_pos/subset_order_header/;
+FROM @tasty_bytes.public.s3load/raw_pos/order_header/;
 
 
 -- order_detail table load
 COPY INTO tasty_bytes.raw_pos.order_detail
-FROM @tasty_bytes.public.s3load/raw_pos/subset_order_detail/;
+FROM @tasty_bytes.public.s3load/raw_pos/order_detail/;
 
 
 DROP WAREHOUSE demo_build_wh;
