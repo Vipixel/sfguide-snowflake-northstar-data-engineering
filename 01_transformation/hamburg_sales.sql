@@ -3,18 +3,18 @@ USE WAREHOUSE compute_wh;
 USE DATABASE tasty_bytes;
 
 -- Query to explore sales in the city of Hamburg, Germany
-WITH _feb_date_dim AS 
-    (
-    SELECT DATEADD(DAY, SEQ4(), '2022-02-01') AS date FROM TABLE(GENERATOR(ROWCOUNT => 28))
-    )
+WITH _feb_date_dim AS (
+    SELECT DATEADD(DAY, SEQ4(), '2022-02-01') AS date 
+    FROM TABLE(GENERATOR(ROWCOUNT => 28))
+)
 SELECT
     fdd.date,
     ZEROIFNULL(SUM(o.price)) AS daily_sales
 FROM _feb_date_dim fdd
 LEFT JOIN analytics.orders_v o
     ON fdd.date = DATE(o.order_ts)
-    AND o.country =  -- Add country
-    AND o.primary_city =  -- Add city
+    AND o.country = '#' -- Add country
+    AND o.primary_city = '#' -- Add city
 WHERE fdd.date BETWEEN '2022-02-01' AND '2022-02-28'
 GROUP BY fdd.date
 ORDER BY fdd.date ASC;
