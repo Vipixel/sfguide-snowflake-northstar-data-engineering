@@ -1,6 +1,3 @@
--- Create a CSV file format here:
-
--- Specify the file format below:
 CREATE OR REPLACE STAGE tasty_bytes.public.s3load
 url = 's3://sfquickstarts/tasty-bytes-builder-education/'
 
