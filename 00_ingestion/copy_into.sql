@@ -15,5 +15,3 @@ CREATE OR REPLACE TABLE tasty_bytes.raw_pos.country
    city VARCHAR(16777216),
    city_population VARCHAR(16777216)
 );
-
--- Use the COPY INTO command to load data into the country table:
