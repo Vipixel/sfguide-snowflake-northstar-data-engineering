@@ -15,7 +15,7 @@ The goal was to analyze weather conditions in Hamburg, Germany, and their impact
 The final dashboard shows **daily sales vs. temperature, precipitation, and wind speed**.  
 Here’s an example of the interactive chart built with Altair:  
 
-![Visualization](images/visualization.png)
+![Visualization](0_ingestion/images/visualization.png)
 
 ## Conclusion
 This project highlights how Snowflake can be used as a complete platform for data pipelines, transformations, and business insights delivery — all in one place.
