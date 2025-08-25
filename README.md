@@ -1,3 +1,6 @@
+![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)
+![Python](https://img.shields.io/badge/Python-3.9%2B-green)
+
 # Tastybytes Weather & Sales Insights
 
 Interactive Data Visualization with **Snowflake** and **Streamlit**
