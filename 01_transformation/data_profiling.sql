@@ -1,6 +1,5 @@
 -- Automated Data Profiling Script for Snowflake Tables
 -- Generates comprehensive data profiles including statistics, distributions, and patterns
-
 -- Create table to store data profiling results
 CREATE OR REPLACE TABLE data_profile_results (
     profile_id STRING DEFAULT UUID_STRING(),
@@ -239,7 +238,6 @@ BEGIN
         CALL profile_table(table_name);
         processed_count := processed_count + 1;
     END FOR;
-    
     RETURN 'Profiling completed for ' || processed_count || ' tables';
 END;
 $$;

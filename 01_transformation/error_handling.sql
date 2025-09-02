@@ -1,4 +1,3 @@
--- Error Handling and Logging Utilities for Snowflake Data Pipeline
 -- These procedures provide comprehensive error handling and logging capabilities
 
 -- Create logging table for pipeline execution tracking
